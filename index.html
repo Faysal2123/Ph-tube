@@ -6,14 +6,20 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b12975be9a.js" crossorigin="anonymous"></script>
+    <style>
+        #blue{
+           color: rgb(110, 175, 248);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="w-11/12 mx-auto py-3 flex justify-between items-center border-b">
+        <nav class="w-11/12 gap-1 mx-auto py-3 flex justify-between items-center border-b">
             <div class="logo w-[100px]">
                 <img src="images/Logo.png" alt="">
             </div>
-            <div class="search"><label class="input input-bordered flex items-center gap-2">
+            <div class="search"><label class="input md:h-12 md:w-60 h-9 w-60 input-bordered flex items-center gap-2">
                 <input type="text" class="grow" placeholder="Search" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +34,12 @@
               </label></div>
             <div class=""><button class="btn btn-error">BLOG</button></div>
         </nav>
+        <nav class="flex justify-center gap-5 py-3" id="categories"></nav>
     </header>
-    
+
+    <main class="w-11/12 mx-auto ">
+       <section id="cont-videos" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10"></section>
+    </main>
+    <script src="./java/java.js"></script>
 </body>
 </html>
